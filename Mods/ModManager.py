@@ -1,13 +1,8 @@
 import bl2sdk
-import webbrowser
 from enum import Enum
 import sys
 import os
 import json
-
-""" The path to our mods folder, determined via the directory containing the current executable (Borderlands2.exe)."""
-Win32Directory = os.path.dirname(sys.executable)
-ModsDirectory = os.path.join(Win32Directory, "Mods")
 
 
 class ModTypes(Enum):
@@ -180,23 +175,6 @@ class BL2MOD:
             If the changed option is a boolean/spinner option, it's the value in the `Choices` array.
             If the changed option is a slider option, the value of the slider (float) that the value was changed to. """
         pass
-
-class DefaultMod(BL2MOD):
-
-    Name = "General"
-    Status = ""
-    Description = "Welcome to the Borderlands 2 Mod Manager\n\nSee below for options."
-    SettingsInputs = {"O": "Open Mods Folder", "R": "Reload Mods", "H": "Help"}
-    Types = []
-    Author = "Abahbob"
-
-    def SettingsInputPressed(self, name):
-        if name == "Open Mods Folder":
-            os.startfile(ModsDirectory)
-        elif name == "Reload Mods":
-            pass
-        elif name == "Help":
-            webbrowser.open("https://github.com/bl-sdk/BL2-Python-Plugins/wiki")
 
 def getModModule(mod):
     modModule = ""

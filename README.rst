@@ -10,15 +10,19 @@ It is used to write mods for `compatible games <https://github.com/bl-sdk/Python
 General Information
 -------------------
 
-- Website: https://bl-sdk.github.io
-- Source code: https://github.com/bl-sdk/PythonSDK
-- Issue tracker: https://github.com/bl-sdk/PythonSDK/issues
-- Discord: https://discord.gg/VJXtHvh
+* Website: https://bl-sdk.github.io
+* Modes list: https://bl-sdk.github.io/mods/
+* Source code: https://github.com/bl-sdk/PythonSDK
+* Issue tracker: https://github.com/bl-sdk/PythonSDK/issues
+* Discord: https://discord.gg/VJXtHvh
+
 
 List of compatible games
 ------------------------
+
 * Borderlands 2 (1.8.7)
 * Borderlands: The Pre-Sequel!
+
 
 Installation
 ------------
@@ -70,6 +74,7 @@ Or, for TPS:
 
 Note that using ``WINEDLLOVERRIDES`` for ``ddraw`` isn't supported by the Wine developers, so if you experience problems with the game while using this method, please don't ask the WineHQ team for assistance.
 
+
 Borderlands Ingame Mod Manager
 ------------------------------
 
@@ -83,10 +88,12 @@ On the main menu, the ``Downloadable Content`` entry is replace with a ``Mods`` 
 
 Mods can be enabled and disabled by selecting them and pressing :kbd:`Enter`.
 
+
 Installing new mods
 -------------------
 
 Mods live in the ``Borderlands 2\Binaries\Win32\Mods`` folder. Each mod should be place in it's own subfolder, and contain an ``__init__.py``. Example ``__init__.py`` path: ``Win32\Mods\SkillRandomizer\__init__.py``
+
 
 Builtin mods
 ------------
@@ -118,11 +125,13 @@ Randomize all the skills!
 - Author: `Abahbob <https://github.com/Matt-Hurd>`_
 - `Source </Mods/SkillRandomizer>`_ 
 
+
 Console commands
 ----------------
 
 * ``py <python code>`` runs arbitrary python code.  
 * ``pyexec <python file>`` runs arbitrary python files from `binaries/Win32/Mods/`.
+
 
 Documentation
 -------------
